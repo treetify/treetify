@@ -1,0 +1,30 @@
+{
+  "name": "treeview",
+  "description": "该库是开源项目[gijgo](https://gijgo.com/tree)的tree组件的单独提取和重写版",
+  "version": "0.0.0",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "serve": "concurrently \"eleventy-dev-server\" \"open-cli http://localhost:8080/examples\"",
+    "prettier": "prettier --config prettier.config.mjs  . --check --cache --cache-location .cache/.prettiercache",
+    "prettier:fix": "prettier --config prettier.config.mjs . --write",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy-dev-server": "^2.0.2",
+    "concurrently": "^8.2.2",
+    "medium-zoom": "^1.1.0",
+    "open-cli": "^8.0.0",
+    "prettier": "^3.3.3",
+    "sass": "^1.77.8",
+    "vitepress": "^1.3.4",
+    "vitepress-plugin-tabs": "^0.5.0"
+  }
+}
