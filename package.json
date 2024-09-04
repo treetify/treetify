@@ -19,6 +19,7 @@
   "license": "MIT",
   "devDependencies": {
     "@11ty/eleventy-dev-server": "^2.0.2",
+    "@stackblitz/sdk": "^1.11.0",
     "concurrently": "^8.2.2",
     "medium-zoom": "^1.1.0",
     "open-cli": "^8.0.0",

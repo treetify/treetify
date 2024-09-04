@@ -1,5 +1,5 @@
 <script setup>
-
+import sdk from '@stackblitz/sdk';
 import { ref, onMounted } from "vue";
 
 
@@ -37,6 +37,12 @@ const codepen = ref(null);
 
 onMounted(() => {
     console.log('ww');
+
+    // sdk.embedGithubProject('embed', 'vitejs/vite/tree/main/packages/create-vite/template-vanilla', {
+    //     height: 400,
+    //     openFile: 'index.html',
+    // });
+
 })
 
 
@@ -45,8 +51,9 @@ onMounted(() => {
 
 <template>
     <div id="cnt">
-        <iframe
-            src="https://stackblitz.com/edit/ajiho-treeview-n3vgv8?embed=1&file=Tree.Base.addNode.Append.Parent.html&theme=light&initialPath=/Tree.Base.addNode.Append.Parent.html&showSidebar='true'"></iframe>
+
+        <!-- <div class="embed"></div> -->
+        <iframe src="https://stackblitz.com/edit/stackblitz-starters-d2yjgh?embed=1&file=index.html"></iframe>
     </div>
 
 </template>
